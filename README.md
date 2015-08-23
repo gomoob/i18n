@@ -266,5 +266,5 @@ TODO
 
 ## Release history
 
-### 1.0.0 (2015-08-23)
+### 0.1.0-alpha.1 (2015-08-23)
  * First release

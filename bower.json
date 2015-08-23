@@ -1,13 +1,48 @@
 {
   "name": "gomoob.i18n",
-  "version" : "1.0.0",
+  "version" : "0.1.0-alpha.1",
+  "description": "Polyglot.js extended to load JSON translation files and cache them.",
   "main" : "lib/i18n.js",
+  "license": "MIT",
+  "homepage": "https://github.com/gomoob/i18n",
   "ignore" : [
+    ".gitignore",
+    ".jshintrc", 
+    ".npmignore",
     ".project",
+    ".travis.yml",
+    "bower_components",
+    "gulpfile.js",
+    "node_modules",
     "package.json"
   ],
+  "authors": [
+    {
+      "name" : "GOMOOB SARL",
+      "email" : "contact@gomoob.com"  
+    },
+    {
+      "name" : "Baptiste Gaillard", 
+      "email" : "baptiste.gaillard@gomoob.com"
+    },
+    {
+      "name" : "Simon Baudry",
+      "email" : "simon.baudry@gomoob.com"   
+    }
+  ],
+  "keywords": [
+    "i18n",
+    "locale",
+    "polyglot",
+    "transaltion",
+    "internationalization",
+    "multilingual",
+    "language",
+    "gomoob"
+  ],
   "dependencies": {
-      "jquery" : "~2.1"
+      "jquery" : "^1.8.0 || ^2.0.0",
+      "polyglot" : "^0.4.3"
   },
   "devDependencies": {}
 }
