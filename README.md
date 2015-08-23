@@ -1,4 +1,4 @@
-# i18n
+# gomoob.i18n
 
 > Polyglot.js extended to load JSON translation files and cache them.
 
@@ -59,7 +59,7 @@ Bower is available on bower.io and npmjs.org.
 
 ```
 bower install gomoob.i18n
-`
+```
 
 #### Node
 
@@ -121,13 +121,38 @@ Each time translations are successfully fetched they are put in a translation ca
 the method and for the same `{type, locale, version}` tuple will not perform not necessary HTTP requests and pull 
 translations from the cache.
 
-If for good reasons your need to force a refresh of a cache entry you can call the method with the `forceReload` option.
+If for some reasons your need to force a refresh of a cache entry you can call the method with the `forceReload` option.
+
+**Sample**
+
+```javascript
+polyglot.load(
+    {
+        forceReload : false,
+        type : 'sub-module-a',
+        locale : 'fr',
+        version : '0.1.0', 
+        success : function(data, textStatus, jqXHR) {
+        
+            // Translation file successfully loaded and cached, polyglot instance re-configured
+        
+        }, 
+        error : function(jqXHR, textStatus, errorThrown) {
+        
+            // Fails to load the translation file
+        
+        }           
+    }
+);
+```
 
 The input parameters of the `load(options)` method are documented in the following sub-sections.
 
 #### `error`
 
-TODO
+The `error(jqXHR jqXHR, String textStatus, String errorThrown)` option allows to define a callback method to be called 
+when loading of a translation file with HTTP fails. This method has exactly the same parameters an the jQuery AJAX 
+`error` method.
 
 #### `forceReload`
 
@@ -139,7 +164,15 @@ TODO
 
 #### `success`
 
-TODO
+The `success(data, textStatus, jqXHR)` option allows to define a callback method to be called when loading of a 
+translationis successful. This method has exactly the same parameters an the jQuery AJAX `success` method.
+
+If the `success` method is called it means that
+ * The HTTP ajax request used to pull the translation file is successful
+ * The translations (i.e that associated Polyglot phrases) have been cached successfully
+ * The Polyglot instance has been automatically re-configured with the pulled translations
+
+Please note that if the translations are loaded from the cache the `textStatus` and `jqXHR` parameters are `undefined`.
 
 #### `type` 
 
@@ -167,7 +200,7 @@ gulp
 
 This section describe useful best practices we use everyday inside our JS projects.
 
-### Use a polyglot singleton
+### Use a Polyglot singleton
 
 TODO
 
@@ -224,6 +257,10 @@ TODO
 TODO
 
 ### Embed translation in a DOM node with Gulp and Preprocess
+
+TODO
+
+### Expose the `t` method to templates
 
 TODO
 
