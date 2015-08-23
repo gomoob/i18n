@@ -1,0 +1,13 @@
+{
+  "name": "gomoob.i18n",
+  "version" : "1.0.0",
+  "main" : "lib/i18n.js",
+  "ignore" : [
+    ".project",
+    "package.json"
+  ],
+  "dependencies": {
+      "jquery" : "~2.1"
+  },
+  "devDependencies": {}
+}
