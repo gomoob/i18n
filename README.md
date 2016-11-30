@@ -266,5 +266,9 @@ TODO
 
 ## Release history
 
+### 1.0.0-alpha.2 (2016-11-30)
+ * Fix bug in `load(options)`, the function was not using options configured in the constructor ; 
+ * Fix undefined `local` variable (should be `locale`) in `load(options)`.
+
 ### 1.0.0-alpha.1 (2015-08-23)
  * First release
