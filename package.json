@@ -23,6 +23,9 @@
   "bugs": {
     "url": "https://github.com/gomoob/i18n/issues"
   },
+  "publishConfig": {
+    "registry":"https://registry.npmjs.org"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gomoob/i18n"
