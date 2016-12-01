@@ -1,6 +1,6 @@
 {
   "name": "gomoob.i18n",
-  "version" : "1.0.0-alpha.2",
+  "version" : "1.0.0-alpha.3",
   "description": "Polyglot.js extended to load JSON translation files and cache them.",
   "main" : "lib/i18n.js",
   "license": "MIT",

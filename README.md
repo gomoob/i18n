@@ -266,6 +266,9 @@ TODO
 
 ## Release history
 
+## 1.0.0-alpha.3 (2016-12-01)
+ * Now the translations cache is only created if at least one phrase is present in the constructor.
+
 ### 1.0.0-alpha.2 (2016-11-30)
  * Fix bug in `load(options)`, the function was not using options configured in the constructor ; 
  * Fix undefined `local` variable (should be `locale`) in `load(options)`.
