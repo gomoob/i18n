@@ -266,7 +266,10 @@ TODO
 
 ## Release history
 
-## 1.0.0-alpha.3 (2016-12-01)
+### 1.0.0-alpha.4 (2016-12-03)
+ * Fix a bug while calling the URL builder, the locale, type and version passed was not the right ones.
+
+### 1.0.0-alpha.3 (2016-12-01)
  * Now the translations cache is only created if at least one phrase is present in the constructor.
 
 ### 1.0.0-alpha.2 (2016-11-30)
